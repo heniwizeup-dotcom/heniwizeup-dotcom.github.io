@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADH, renfort développement, data et automatisation</title>
+<meta name="description" content="Développeur freelance full-stack, data et automatisation. Missions cadrées de 1 500 à 8 000 EUR, prix ferme avant de commencer, livrées en 2 à 4 semaines.">
+<meta property="og:title" content="Je livre pendant que vous recrutez">
+<meta property="og:description" content="Renfort développement, traitement de données et automatisation. Prix ferme, date ferme, code public.">
+<style>
+ :root{
+   --encre:#061738; --encre-clair:#0c2049; --bord:#1b2e55;
+   --texte:#e8edf6; --doux:#93a5c4; --accent:#4b86ff; --vert:#24c98a;
+ }
+ *{box-sizing:border-box}
+ html{scroll-behavior:smooth}
+ body{margin:0;background:var(--encre);color:var(--texte);
+   font:17px/1.65 -apple-system,"Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+ .enveloppe{max-width:880px;margin:0 auto;padding:0 20px}
+ a{color:var(--accent)}
+ h1,h2,h3{line-height:1.25;margin:0}
+ h2{font-size:28px;margin:64px 0 8px}
+ h3{font-size:19px;margin:0 0 6px}
+ p{margin:14px 0}
+ .doux{color:var(--doux)}
+
+ /* Bandeau. La diagonale reprend la coupe du D du logo, un seul geste graphique. */
+ header{position:relative;overflow:hidden;border-bottom:1px solid var(--bord);
+   background:linear-gradient(105deg,var(--encre) 58%,var(--encre-clair) 58%)}
+ header .enveloppe{padding:52px 20px 60px}
+ header img{height:44px;display:block}
+ h1{font-size:clamp(30px,5.4vw,46px);margin:28px 0 0;letter-spacing:-.4px}
+ .sous{font-size:19px;color:var(--doux);margin-top:12px;max-width:44ch}
+
+ .bouton{display:inline-block;margin-top:28px;padding:14px 26px;border-radius:8px;
+   background:var(--accent);color:#04102a;font-weight:600;text-decoration:none}
+ .bouton.secondaire{background:transparent;color:var(--texte);border:1px solid var(--bord);margin-left:10px}
+
+ .grille{display:grid;gap:18px;margin-top:26px}
+ @media(min-width:720px){.grille.trois{grid-template-columns:repeat(3,1fr)}}
+ .carte{border:1px solid var(--bord);border-radius:12px;padding:22px;background:#08193a}
+ .prix{font-size:22px;font-weight:700;color:var(--vert);margin:10px 0 2px}
+ .delai{font-size:14px;color:var(--doux)}
+ .carte ul{margin:14px 0 0;padding-left:18px;font-size:15.5px;color:var(--doux)}
+ .carte li{margin:6px 0}
+
+ ol.etapes{counter-reset:e;list-style:none;padding:0;margin:26px 0 0}
+ ol.etapes li{counter-increment:e;position:relative;padding:0 0 22px 46px}
+ ol.etapes li::before{content:counter(e);position:absolute;left:0;top:-2px;width:30px;height:30px;
+   border-radius:50%;background:var(--encre-clair);border:1px solid var(--bord);
+   display:flex;align-items:center;justify-content:center;font-size:15px;color:var(--accent);font-weight:700}
+
+ table{width:100%;border-collapse:collapse;margin-top:22px;font-size:15.5px}
+ td{padding:12px 10px;border-top:1px solid var(--bord);vertical-align:top}
+ td:first-child{width:38%;font-weight:600}
+ td:first-child a{text-decoration:none}
+
+ .cadre{border:1px solid var(--bord);border-left:3px solid var(--accent);
+   border-radius:0 10px 10px 0;padding:18px 22px;margin-top:26px;background:#08193a}
+
+ footer{margin-top:72px;border-top:1px solid var(--bord);padding:30px 0 60px;
+   color:var(--doux);font-size:15px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="enveloppe">
+    <img src="adh-logo.svg" alt="ADH">
+    <h1>Je livre pendant que vous recrutez.</h1>
+    <p class="sous">Développeur full-stack, data et automatisation, en freelance à temps
+      plein. Le chantier avance pendant que le poste se pourvoit, et je transmets à la
+      personne qui arrive.</p>
+    <a class="bouton" href="https://www.linkedin.com/in/hen-adh">Me joindre sur LinkedIn</a>
+    <a class="bouton secondaire" href="https://github.com/heniwizeup-dotcom">Voir le code</a>
+  </div>
+</header>
+
+<main class="enveloppe">
+
+  <h2>Le problème que je prends en charge</h2>
+  <p>Un poste de développeur met en moyenne plusieurs mois à se pourvoir. Pendant ce
+    temps, le projet n'avance pas, et la charge retombe sur une équipe qui faisait déjà
+    autre chose.</p>
+  <p>Ou alors le développement n'est pas le sujet : ce sont vos équipes qui recopient des
+    données d'un logiciel à l'autre, et qui relisent des documents ligne à ligne.</p>
+  <p>Dans les deux cas, c'est du travail cadré, borné dans le temps, et qui n'exige pas
+    d'embaucher.</p>
+
+  <h2>Trois missions, prix ferme</h2>
+  <p class="doux">Le prix est fixé avant de commencer, à partir d'un cadrage écrit. Il ne
+    bouge pas en cours de route. Si le périmètre change, on en refait un.</p>
+
+  <div class="grille trois">
+    <div class="carte">
+      <h3>Renfort développement</h3>
+      <div class="prix">4 000 à 8 000 EUR</div>
+      <div class="delai">3 à 4 semaines</div>
+      <ul>
+        <li>Le chantier qui attend, livré en production</li>
+        <li>React, TypeScript, Node, Next.js, Electron</li>
+        <li>Documentation et passation à votre futur recruté</li>
+        <li>Aucune dépendance créée volontairement</li>
+      </ul>
+    </div>
+    <div class="carte">
+      <h3>Données et prévision</h3>
+      <div class="prix">2 500 à 5 000 EUR</div>
+      <div class="delai">2 à 3 semaines</div>
+      <ul>
+        <li>Extraction, normalisation, contrôles de qualité</li>
+        <li>Prévision et scoring, Python, pandas, scikit-learn</li>
+        <li>Exports exploitables par vos équipes</li>
+        <li>Le raisonnement est lisible, pas une boîte noire</li>
+      </ul>
+    </div>
+    <div class="carte">
+      <h3>Automatisation</h3>
+      <div class="prix">1 500 à 3 000 EUR</div>
+      <div class="delai">1 à 2 semaines</div>
+      <ul>
+        <li>Vos outils se parlent, sans ressaisie</li>
+        <li>Documents traités seuls, avec contrôle avant écriture</li>
+        <li>n8n auto-hébergé, chez vous ou chez moi</li>
+        <li>Aucune défaillance silencieuse, tout est alerté</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Comment on travaille</h2>
+  <ol class="etapes">
+    <li><strong>Un appel de trente minutes</strong> sur le chantier qui attend, ou sur le
+      processus qui coûte le plus de temps. Gratuit, et sans suite obligatoire.</li>
+    <li><strong>Un cadrage écrit</strong> : ce qui est fait, ce qui ne l'est pas, le prix
+      ferme, la date de livraison. Vous décidez sur ce document, pas sur une promesse.</li>
+    <li><strong>La construction</strong>, avec un point d'avancement par semaine. Vous
+      voyez le travail avancer, pas seulement le résultat final.</li>
+    <li><strong>La remise</strong> : documentation en français et prise en main, pour que
+      vous restiez autonome après mon départ.</li>
+  </ol>
+
+  <h2>Vous pouvez juger avant de me parler</h2>
+  <p>Treize outils que j'ai écrits sont publics sur GitHub. Le code se lit, il tourne, et
+    vous pouvez le faire relire par votre équipe technique avant le premier appel.</p>
+
+  <table>
+    <tr>
+      <td><a href="https://github.com/heniwizeup-dotcom/stocksense">StockSense</a></td>
+      <td>Prévision probabiliste de la demande à 14 jours sur 40 références et 6 points de
+        distribution, convertie en politique de réapprovisionnement chiffrée.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/heniwizeup-dotcom/llm-invoice-extractor">Extraction de factures par LLM</a></td>
+      <td>Chaque facture ressort classée exploitable, à relire ou inutilisable. Ce sont
+        quatre contrôles métier qui décident, pas le modèle.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/heniwizeup-dotcom/time-tracking-platform">ClockWize</a></td>
+      <td>Suivi du temps sur une centaine de postes Mac et Windows, y compris hors ligne,
+        avec agent de bureau et tableau de bord temps réel.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/heniwizeup-dotcom/csharp-legacy-audit">Analyseur statique C#</a></td>
+      <td>Rend un plan de refactorisation priorisé plutôt qu'une liste de deux mille
+        avertissements que personne ne lit.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/heniwizeup-dotcom">Les neuf autres</a></td>
+      <td>Normalisation de relevés bancaires, validateur de FEC, workflows n8n de
+        production, application RH, portail client, pipeline ETL, et le reste.</td>
+    </tr>
+  </table>
+
+  <h2>Ce que je ne fais pas</h2>
+  <div class="cadre">
+    <p style="margin-top:0">Je ne prends pas de mission en mobile natif, en système
+      embarqué ni en jeu vidéo. Je ne fais pas de design graphique.</p>
+    <p style="margin-bottom:0">Quand un sujet sort de ce que je sais tenir, je le dis
+      avant de commencer plutôt qu'au milieu. C'est aussi ce qui rend le reste crédible.</p>
+  </div>
+
+  <h2>Où je suis</h2>
+  <p>À Antananarivo, entièrement à distance. Le fuseau couvre toute la journée de bureau
+    européenne, donc les échanges se font en direct et pas en décalé. Je facture en euros.</p>
+
+  <h2>Parlons-en</h2>
+  <p>Un message sur LinkedIn suffit. Dites-moi le chantier qui attend ou la tâche qui
+    revient chaque semaine sans que personne ne l'aime, et je vous dis en une réponse si
+    c'est pour moi ou pas.</p>
+  <p><a class="bouton" href="https://www.linkedin.com/in/hen-adh">Me joindre sur LinkedIn</a></p>
+
+</main>
+
+<footer class="enveloppe">
+  ADH, Hen ADH, développeur freelance. Code public sur
+  <a href="https://github.com/heniwizeup-dotcom">github.com/heniwizeup-dotcom</a>.
+</footer>
+
+</body>
+</html>
